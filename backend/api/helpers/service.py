@@ -5,7 +5,7 @@ from config.config import DATABASE
 from datetime import date, datetime
 from psycopg2.extras import RealDictCursor
 import api.helpers.base_errors as errors
-import backend.api.helpers.base_name as names
+import api.helpers.base_name as names
 
 
 def db_connect_new():

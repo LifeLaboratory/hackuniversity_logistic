@@ -1,5 +1,5 @@
-import backend.api.helpers.base_name as names
-import backend.api.helpers.base_errors as errors
+import api.helpers.base_name as names
+import api.helpers.base_errors as errors
 from api.helpers.service import Sql
 
 
