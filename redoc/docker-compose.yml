@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  documentation:
+    build:
+      context: ./
+    environment:
+      - "SPEC_URL=swagger.yml"
+    ports:
+      - "5001:80"

@@ -1,0 +1,62 @@
+swagger: "2.0"
+info:
+  title: "Test API"
+  description: "test api"
+  version: "1.0.0"
+host: "hackuniversity.crabdance.com"
+basePath: "/api/v1"
+schemes:
+  - "https"
+tags:
+- name: "test"
+  description: "Test tag"
+paths:
+  /hello:
+    post:
+      tags:
+      - "test"
+      summary: "Hello"
+      description: "Test hello POST"
+      operationId: "hello"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "HelloRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/HelloRequest"
+      responses:
+        200:
+          description: "Successfully replied with hello"
+          schema:
+            $ref: "#/definitions/HelloResponse"
+        400:
+          description: &invalid_request_body "Bad request, request body is not valid"
+        500:
+          description: &internal_server_error "Internal server error"
+      x-code-samples:
+        - lang: 'cURL'
+          source: |
+            curl \
+            -X POST \
+            -H "Content-Type: application/json" \
+            -d '{"key": "value"}' \
+            -i \
+            http://hackuniversity.crabdance.com/api/v1/hello
+definitions:
+  HelloRequest:
+    type: "object"
+    properties:
+      key:
+        type: "string"
+        description: "Value"
+  HelloResponse:
+    type: "object"
+    properties:
+      hello:
+        type: "string"
+        description: "Response"
