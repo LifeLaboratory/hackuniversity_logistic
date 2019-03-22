@@ -1,0 +1,22 @@
+version: 2
+
+jobs:
+  deploy_redoc:
+    docker:
+      - image: docker:17.05.0-ce-git
+
+    working_directory: ~/repo
+
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "	2f:fc:61:7b:d4:b0:86:22:e4:71:8c:df:23:71:19:ce"
+      - run:
+          name: Deploy
+          command: ssh-keyscan -H $DEPLOY_SERVER >> ~/.ssh/known_hosts && ssh life@$DEPLOY_SERVER 'cd ~/hackuniversity_logistic && git pull && cd redoc && docker-compose up -d --build'
+
+workflows:
+  version: 2
+  hackuniversity_deploy:
+    jobs:
+      - deploy_redoc
