@@ -1,4 +1,4 @@
-from backend.route.RouteService import Auth
+from route.RouteService import Auth
 
 ROUTES = {
     Auth: '/auth',

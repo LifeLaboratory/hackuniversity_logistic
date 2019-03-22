@@ -1,9 +1,9 @@
 # coding=utf-8
-from backend.api.helpers import base_errors as errors
-from backend.api.helpers import base_name as names
-from backend.api.helpers.service import Gis as gs
+from api.helpers import base_errors as errors
+from api.helpers import base_name as names
+from api.helpers.service import Gis as gs
 from flask_restful import Resource, reqparse
-from backend.api.src.Authentication import auth
+from api.src.Authentication import auth
 import json
 from flask import jsonify
 from flask import json

@@ -1,6 +1,6 @@
 import unittest
 import requests as req
-from backend.api.helpers import base_name as names
+from api.helpers import base_name as names
 
 
 class TestStringMethods(unittest.TestCase):

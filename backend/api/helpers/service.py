@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 import json
 import psycopg2
-from backend.config.config import DATABASE
+from config.config import DATABASE
 from datetime import date, datetime
 from psycopg2.extras import RealDictCursor
-import backend.api.helpers.base_errors as errors
+import api.helpers.base_errors as errors
 import backend.api.helpers.base_name as names
 
 

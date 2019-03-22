@@ -3,7 +3,7 @@ import sys
 import os
 import flask
 from flask_restful import Api
-from backend.route.route_list import ROUTES
+from route.route_list import ROUTES
 
 sys.path.append(os.getcwd()+'/../')
 sys.path.append(os.getcwd()+'../')

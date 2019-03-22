@@ -1,6 +1,6 @@
 import backend.api.helpers.base_name as names
 import backend.api.helpers.base_errors as errors
-from backend.api.helpers.service import Sql
+from api.helpers.service import Sql
 
 
 def auth(user_data):
