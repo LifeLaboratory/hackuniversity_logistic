@@ -1,0 +1,28 @@
+@import "mixins";
+
+.header {
+  height: 65px;
+  border-bottom: 1px solid #f3979c;
+  box-shadow: 0 0 10px 1px rgba(255, 0, 0, 0.0784313725490196);
+
+  &__buttons-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 65px;
+    height: 65px;
+
+    &--settings {
+      background: url("../img/icons/settings.svg") no-repeat center;
+      background-size: 40%;
+      transform: rotate(90deg);
+    }
+
+    &--user {
+      background: url("../img/icons/user.svg") no-repeat center;
+      background-size: 40%;
+    }
+  }
+}

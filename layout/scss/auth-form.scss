@@ -1,0 +1,28 @@
+@import "mixins";
+
+.auth-form {
+  &__title {
+    font-size: 24px;
+    margin-bottom: 55px;
+  }
+
+  &__input {
+    line-height: 48px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #898a8b;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  &__submit-btn {
+    width: 100%;
+    line-height: 48px;
+    padding: 0 20px;
+    background-color: #ff0000;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
