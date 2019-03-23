@@ -1,0 +1,9 @@
+@import "mixins";
+
+.song-text {
+  &__title {
+    font-family: CorpidOT-Regular, sans-serif;
+    font-size: 24px;
+    color: #ee1d23;
+  }
+}

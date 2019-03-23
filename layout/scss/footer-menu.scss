@@ -15,6 +15,19 @@
     height: 65px;
     width: 65px;
 
+    &.active {
+      background-color: #ddd;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--fire {
+      background: url("../img/icons/flame.svg") no-repeat center;
+      background-size: 45%;
+    }
+
     &--emergency {
       background: url("../img/icons/first-aid-kit.svg") no-repeat center;
       background-size: 45%;

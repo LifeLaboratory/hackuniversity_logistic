@@ -1,0 +1,18 @@
+@import "mixins";
+
+.performance {
+  &__title {
+    font-size: 24px;
+    color: #ee1d23;
+    font-family: CorpidOT-Regular, sans-serif;
+    margin-bottom: 17px;
+  }
+
+  &__visual {
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    margin-top: 15px;
+  }
+}

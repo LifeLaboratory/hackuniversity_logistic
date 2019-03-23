@@ -1,0 +1,33 @@
+@import "mixins";
+
+@keyframes triggered {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+       transform: scale(1.2);
+   }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fire-block {
+  margin-top: 25px;
+
+  &__count {
+    font-size: 48px;
+    color: #f15522;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  &__button {
+    margin: 0 auto;
+
+    &.trigger {
+      animation: triggered 1s;
+    }
+  }
+}
